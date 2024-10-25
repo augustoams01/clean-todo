@@ -8,7 +8,7 @@ function Todo({task, deleteTodo, editTodo}) {
       <div className='absolute w-[4px] h-[35px] bg-emerald-500 group-hover:bg-emerald-200 -left-[2px] rounded-full transition duration-300 group-hover:blur-md'></div>
       <div className='flex justify-between w-full items-center'>
       <p className='font-primary'>{task.task}</p>
-      <div className='flex items-center gap-x-4'>
+      <div className='flex items-center gap-x-4 ml-3'>
         <div className='group/icon1 flex justify-center items-center hover:-translate-y-1 bg-neutral-950 w-8 h-8 rounded-full transition duration-300'>
         <AiFillEdit className="text-xl group-hover/icon1:rotate-12 group-hover/icon1:scale-110 group-hover/icon1:text-emerald-500 transition duration-300" onClick={() => editTodo(task.id)}/>
         </div>

@@ -30,7 +30,7 @@ function TodoList() {
     <>
           <div className='flex flex-col justify-center bg-neutral-950 rounded-md p-8'>
             <Form createTodo={createTodo}/>
-            <div className='h-[2px] rounded-full w-full bg-gray-500 mb-8'></div>
+            <div className='h-[2px] rounded-full w-full bg-gray-500 my-8'></div>
             {
             todos.map((todo, idx) => (
               todo.isEditing ? <Edit key={idx} editTodo={editTask} task={todo}/> :
